@@ -3,6 +3,6 @@ import java.util.ArrayList;
 
 public class primeFactorization {
 	public ArrayList<Integer> factorization(int val){
-		return null;
+		return new ArrayList<Integer>();
 	}
 }
