@@ -40,5 +40,14 @@ public class PrimeFactorTest {
 		test.add(2);
 		assertEquals(test,p.factorization(4));
 	}
+	
+	@Test
+	public void test6() {
+		PrimeFactorization p = new PrimeFactorization();
+		ArrayList<Integer> test = new ArrayList<Integer>();
+		test.add(2);
+		test.add(3);
+		assertEquals(test,p.factorization(6));
+	}
 
 }
