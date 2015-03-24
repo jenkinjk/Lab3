@@ -74,7 +74,7 @@ public class PrimeFactorTest {
 		test.add(7);
 		test.add(7);
 		test.add(1327);
-		assertEquals(test,p.factorization(9));
+		assertEquals(test,p.factorization(325115));
 	}
 	
 
