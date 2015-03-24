@@ -58,5 +58,13 @@ public class PrimeFactorTest {
 		test.add(2);
 		assertEquals(test,p.factorization(8));
 	}
+	@Test
+	public void test9() {
+		PrimeFactorization p = new PrimeFactorization();
+		ArrayList<Integer> test = new ArrayList<Integer>();
+		test.add(3);
+		test.add(3);
+		assertEquals(test,p.factorization(9));
+	}
 
 }
