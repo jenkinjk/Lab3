@@ -16,9 +16,12 @@ public class PrimeGeneratorTest {
 	public static Iterable<Object[]> data(){
 		ArrayList<Integer> one =new ArrayList<Integer>();
 		ArrayList<Integer> two =new ArrayList<Integer>();
+		ArrayList<Integer> three =new ArrayList<Integer>();
+		three.add(2);
 		return Arrays.asList(new Object[][]{
 				{1, one},
-				{2, two}
+				{2, two},
+				{3, three}
 				});
 	}
 
