@@ -1,14 +1,18 @@
-import static org.junit.Assert.fail;
+import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.junit.Test;
-import org.junit.runners.Parameterized.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized.Parameters;
 
-
+@RunWith(org.junit.runners.Parameterized.class)
 public class PrimeGeneratorTest {
-
+	private int fInput;
+    private ArrayList<Integer> fExpected;
+    
+    
 	@Parameters
 	public static Iterable<Object[]> data(){
 		ArrayList<Integer> one =new ArrayList<Integer>();
@@ -16,17 +20,18 @@ public class PrimeGeneratorTest {
 				{1, one}
 		});
 	}
-	private int fInput;
-	 
-    private ArrayList<Integer> fExpected;
+	
 
     public PrimeGeneratorTest(int input, ArrayList<Integer> expected) {
             fInput= input;
             fExpected= expected;
     }
+    
 	@Test
-	public void test() {
-		assertEquals(fExpected,PrimeGenerator.generate(fInput));
+	public void testPrimeGenerator() {
+		PrimeGenerator primegenerator = new PrimeGenerator();
+
+		assertEquals(fExpected,primegenerator.generate(fInput));
 	}
 
 }
