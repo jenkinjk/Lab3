@@ -27,12 +27,18 @@ public class PrimeGeneratorTest {
 		fifteen.add(7);
 		fifteen.add(11);
 		fifteen.add(13);
+		ArrayList<Integer> twentyFour =new ArrayList<Integer>();
+		twentyFour.addAll(fifteen);
+		twentyFour.add(17);
+		twentyFour.add(19);
+		twentyFour.add(23);
 		return Arrays.asList(new Object[][]{
 				{1, one},
 				{2, two},
 				{3, three},
 				{7, seven},
-				{15, fifteen}
+				{15, fifteen},
+				{24, twentyFour}
 				});
 	}
 
