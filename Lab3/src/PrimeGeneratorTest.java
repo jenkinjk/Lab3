@@ -18,10 +18,15 @@ public class PrimeGeneratorTest {
 		ArrayList<Integer> two =new ArrayList<Integer>();
 		ArrayList<Integer> three =new ArrayList<Integer>();
 		three.add(2);
+		ArrayList<Integer> seven =new ArrayList<Integer>();
+		seven.add(2);
+		seven.add(3);
+		seven.add(5);
 		return Arrays.asList(new Object[][]{
 				{1, one},
 				{2, two},
-				{3, three}
+				{3, three},
+				{7, seven}
 				});
 	}
 
