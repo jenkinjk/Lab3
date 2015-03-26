@@ -11,6 +11,9 @@ public class PrimeGenerator {
 		primes.add(7);
 		primes.add(11);
 		primes.add(13);
+		primes.add(17);
+		primes.add(19);
+		primes.add(23);
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		for(int prime: primes){
 			if(prime>=fInput){
