@@ -22,11 +22,17 @@ public class PrimeGeneratorTest {
 		seven.add(2);
 		seven.add(3);
 		seven.add(5);
+		ArrayList<Integer> fifteen =new ArrayList<Integer>();
+		fifteen.addAll(seven);
+		fifteen.add(7);
+		fifteen.add(11);
+		fifteen.add(13);
 		return Arrays.asList(new Object[][]{
 				{1, one},
 				{2, two},
 				{3, three},
-				{7, seven}
+				{7, seven},
+				{15, fifteen}
 				});
 	}
 
